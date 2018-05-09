@@ -24,6 +24,8 @@ github_username:  hubgit12345678910
 
 disqus:
   shortname: hubgit-has-gud-sight
+  
+  timezone: America/Los_Angeles
 
 # Build settings
 markdown: kramdown
