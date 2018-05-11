@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Markdown"
+date:   2018-05-11 13:30:49 -0700
+author: HubGit
+categories: uncategorized
+---
+
+# H1
+
+## H2
+
+### H3
+
+#### H4
+
+##### H5
+
+###### H6
+
+*italics*
+
+**bold**
+
+***bold and italics***
+
+* List
+* List
+  * List
+  * List
+
+1. Ordered list 
+2. 2
+3.  3
+   1.  1
+   2.  2
+   
+   :fire:
+   
+   :innocent:
+   
+   [link](https://google.com)
+   
+   ~~strikethrough~~
+   
+   > Blockquote
+   
+   :disappointed:
+   
+
+`<inline-code>` 
+   
+   Hi | Hi
+   ---|---
+   1 | 2
+   hi | hi
