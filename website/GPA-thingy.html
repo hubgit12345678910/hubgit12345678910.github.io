@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body onLoad="GPAcal()">
+<script type="text/javascript">
+
+function GPAcal() {
+var name = "";
+
+
+while (name != "end") {
+	
+	var name = prompt("Enter your student's name.(enter end if ur done)");
+	if (name != "end"){
+	
+	var class1 = prompt("Enter your first class");
+	var grade1 = prompt("Enter the grade for "+ class1);
+	
+	
+	
+	var class2 = prompt("Enter your second class");
+	var grade2 = prompt("Enter the grade for "+ class2);
+	
+	
+	
+	var class3 = prompt("Enter your third class");
+	var grade3 = prompt("Enter the grade for "+ class3);
+	
+	document.write(""+name+" got a "+grade1+" in "+class1+", a "+grade2+" in "+class2+" and a "+grade3+" in "+class3);
+	
+	//var grade1 = "A"
+	if (grade1 == "A") {
+		grade1 = 4;
+		}
+	else if (grade1 == "B"){
+		grade1 = 3;
+		}
+	else if (grade1 == "C"){
+		grade1 = 2;
+		}
+	else if (grade1 == "D"){
+		grade1 = 1;
+		}
+	else if (grade1 == "F"){
+		grade1 = 0;
+		}
+		
+		
+		//var grade2 = "B"
+	
+		if (grade2 == "A") {
+		grade2 = 4;
+		}
+	else if (grade2 == "B"){
+		grade2 = 3;
+		}
+	else if (grade2 == "C") {
+		grade2 = 2;
+		}
+	else if (grade2 == "D") {
+		grade2 = 1;
+		}
+	else if (grade2 == "F"){
+		grade2 = 0;
+		}
+		
+		//var grade3 = "F"
+	
+		if (grade3 == "A") {
+		grade3 = 4;
+		}
+	else if (grade3 == "B") {
+		grade3 = 3;
+		}
+	else if (grade3 == "C"){
+		grade3 = 2;
+		}
+	else if (grade3 == "D"){
+		grade3 = 1;
+		}
+	else if (grade1 == "F"){
+		grade1 = 0;
+		}
+		
+
+	var avr = (grade1 + grade2 + grade3);
+	document.write("<br>Sum of grades: "+ avr);
+	avr = avr/3;
+	avr = avr.toFixed(3);
+	document.write("<br>GPA: "+avr+"<br>");
+	}
+	
+	}
+	
+}
+
+
+</script>
+</body>
+</html>

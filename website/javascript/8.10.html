@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body onLoad="factorial()">
+<script type="text/javascript">
+function factorial(){
+	var fact = Number(prompt("Give me a number that you want to find the factorial of that number"));
+	var num = fact;
+if (num == 0 || num == 1){
+	 var ans = 1;
+}
+var ans = 1
+while (num !== 0){
+ans = ans * num;
+num = num - 1;
+}
+
+document.write("The factorial of ", fact," is ",ans,"");
+}
+</script>
+
+
+
+</body>
+</html>

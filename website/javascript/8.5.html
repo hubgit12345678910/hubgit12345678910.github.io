@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.5</title>
+</head>
+
+<body onLoad="dice()">
+
+<script type="text/javascript">
+function dice(){
+	return Math.floor(Math.random() * 6) +1;
+
+}
+document.write("This is da first bonus. <br>");
+var x = 0;
+while (x < 20){	
+	document.write(dice() + "<br>");
+	x++;
+}
+var num = 0;
+var count6  = 0;
+var count5 = 0;
+var count4  = 0;
+var count3 = 0;
+var count2  = 0;
+var count1 = 0;
+var i = 0;
+while (i <  100){
+	num = dice();
+	if (num == 6){
+		 count6++;
+		 i++;
+	}
+	if (num == 5){
+		 count5++;
+		 i++;
+	}
+	if (num == 4){
+		 count4++;
+		 i++;
+	}
+	if (num == 3){
+		 count3++;
+		 i++;
+	}
+	if (num == 2){
+		 count2++;
+		 i++;
+	}
+	if (num == 1){
+		 count1++;
+		 i++;
+	}
+}
+	document.write("I rolled the dice 100 times and this is what I got: <br> 1: ",count1," times; <br> 2: ",count2," times; <br> 3: ",count3," times; <br> 4: ",count4," times; <br> 5: ",count5," times; <br> 6: ",count6," times.");
+</script>
+</body>
+</html>

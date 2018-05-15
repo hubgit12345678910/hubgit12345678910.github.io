@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<body onLoad="prog()">
+<script text="text/javascript">
+function prog()
+{
+	var miles = prompt("How far are you going to travel?");
+	var speed = prompt("How fast are you going to go?");
+	var time = miles / speed;
+	// 1.5
+	var h = Math.floor(time);
+	// 1
+	var m = (time - h)*60;
+	// .5 ???
+	document.write("It will take you ",h," hours and ",m," minute(s)");
+	
+}
+
+</script>
+</body>
+</html>

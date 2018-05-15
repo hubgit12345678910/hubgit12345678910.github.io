@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Content aligned to center*/
+
+		#sidebar {
+			float:left;
+			width:200px;
+			font-family:"Comic Sans MS", cursive, sans-serif;
+		}
+		
+		#game {
+			float:center;
+			align-content:center;
+		}
+	
+	/*Image for background*/
+	
+		body {
+			background-image: url("../images/jacksworld.jpg"); 
+			color: white;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			font-size:30px;
+		}
+
+		.void {
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			background-color:black;
+			margin: 14px;	
+			padding: 75px;
+		}
+		
+/*Parameters for non-active tags*/
+
+		#start {
+			width: 100px;
+			height: 50px;
+			background-image: url("../images/start.png");
+			background-position:center;
+		}
+	
+/*Image for start button to start mole game*/
+
+		.active {
+			background-image:url('../images/lwiay.jpg');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;
+		}
+		.active1 {
+			background-image:url('../images/lwiay.jpg');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;
+		}
+
+
+	.time{
+	background-image:url('../images/time.png');
+	width: 110px;
+	height:110px;
+	border-radius: 50%;
+	margin: 14px;	
+	padding: 75px;	
+	}
+	
+.deathmole{
+	background-image:url('../images/erin.png');
+	width: 110px;
+	height:110px;
+	border-radius: 50%;
+	margin: 14px;	
+	padding: 75px;
+}
+.gold{
+	background-image:url('../images/pewds.png');
+	width: 110px;
+	height:110px;
+	border-radius: 50%;
+	margin: 14px;	
+	padding: 75px;	
+	}
+
+		.silver {
+			background-image:url('../images/dogjack.png');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;	
+		}
+	
+		.time {
+			background-image:url('../images/time.png');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;	
+		}
+	
+		.deathmole {
+			background-image:url('../images/erin.png');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;
+		}
+
+	#title, #startpage {
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	}
+	#title{
+		font-size:24px;
+		color: white;
+	}
+		.gold {
+			background-image:url('../images/pewds.png');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;	
+		}
+	
+		.badmole {
+			background-image:url('../images/sundae.jpg');
+			width: 110px;
+			height:110px;
+			border-radius: 50%;
+			margin: 14px;	
+			padding: 75px;
+		}
+	
+		#title {
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			font-size:24px;
+			color: white;
+		}
+	
+		#startpage {
+			font-size:xx-large;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			color: white;
+		}
+	
+		.linkbutton {
+			width:700px;
+			height: 500px;
+			background-image:url('../images/sundae.jpg');
+			font-size:100px;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif
+		}
+	
+		.menubutton {
+			width:300px;
+			height: 300px;
+			border-radius: 50%;
+			font-size:50px;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			background-image: url('../images/jackcreep.jpg');
+			color: purple;
+		}
+		
+		.tutorialbutton {
+			width:300px;
+			height: 300px;
+			border-radius: 50%;
+			font-size:50px;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			background-image: url('../images/jackcreep.jpg');
+			color: purple;
+		}
+		
+		#skinshop {
+			font-size:50px
+		}
+		#skinshop{
+			font-size:50px}
+		.font{
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			font-size:36px;
+		}
+	
+		.buttonmenu button {
+			width:120px;
+			height:40px;
+			border:inset;
+			background-color:gold;
+			font-size:14px;
+			border-color:red;
+		}
+		
+		.buttonmenu2 button {
+			width:120px;
+			height:40px;
+			border:inset;
+			background-color:gold;
+			color:black;
+			font-size:14px;
+			border-color:red;
+		}
+		
+		.buttonmenu3 button {
+			width:120px;
+			height:40px;
+			border:inset;
+			background-color:gold;
+			color:black;
+			font-size:14px;
+			border-color:red;
+		}
+		
+		#savescore button {
+			width:120px;
+			height:40px;
+			border:inset;
+			background-color:gold;
+			color:black;
+			font-size:14px;
+			border-color:red;
+		}
+		#clearscore button {
+			width:120px;
+			height:40px;
+			border:inset;
+			background-color:gold;
+			color:black;
+			font-size:14px;
+			border-color:red;
+		}
+		#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: blue;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
+}
+	

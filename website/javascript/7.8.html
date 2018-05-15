@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<body onLoad="prog()">
+<script type="text/javascript">
+function prog()
+{
+	var currentTime = new Date(); 
+	var h = currentTime.getHours();
+	if (h>12){
+		var displayh = h - 12  + "pm";
+		}
+		else {
+			 var displayh = h + "am"
+		}
+		h = 12
+	document.write("The hour is ",displayh," right? <br>");
+	
+	
+	
+	if (h<14 && h >11){
+		alert("That means the restaurant is open!");
+		var input = confirm("Would you like a resevation?");
+	}
+		if (input == true){
+		
+		var array = [
+			"11am",
+			"11:30am",
+			"12pm",
+			"12:30pm",
+			"1pm",
+			"1:30pm",
+			"2pm"
+			];
+			
+		var randomNumber = Math.floor(Math.random()*array.length);
+	
+		document.write("You reservation is at " + array[randomNumber]);
+			}
+		
+			if (input == false) {
+				document.write("Ok next time you better come to my resturant. I want $$$$");
+			
+			}
+	
+		if (h<6 && h>10){
+				document.write("You can find continetal breakfast served in the lobby!");
+			}
+			if (h<17 && h>21){
+			document.write("You can order room service or visit the restaurant");
+			}
+			if (h>=21 && h<=6){
+			document.write("Get out and get a snack");
+			}
+			if (h>=14 && h<=17){
+			document.write("Get out and get a snack");
+			}
+		
+	
+	
+
+}
+</script>
+</body>
+</body>
+</html>

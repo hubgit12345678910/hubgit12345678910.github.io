@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web App</title>
+<!--Stylesheet-->
+<link id= "pagestyle" rel="stylesheet" type="text/css" href="webapp.css">
+<!--JavaScript-->
+<script type="text/javascript" src="webapp.js">
+
+
+</script>
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">       
+</script>
+</head>
+<!--Add your HTML here-->
+<body>
+<div id="startpage"><!--Identifies the buttons as the start page, allowing for broader CSS -->
+<p id="introp">Welcome to the game of: WHAC-A-JACC; made by Parth Kasmalkar, David Bai, Aditya Pawar, and Calvin Lee</p>
+<p>Johncoin: <span id="johncoin"></span></p>
+<button class="linkbutton"><a href="#game">CLASSIC</a></button><!--Links the button to the game, works with text adventure style -->
+<button class="menubutton"><a href="#shop">SHOP</a></button><!-- Links the button to the skinshop-->
+<button class="tutorialbutton"><a href="#tutorial">TUTORIAL</a></button>
+<br>
+<div id="savescore"><button onClick="saveCookies()">SAVE SCORE</button></div><div id="clearscore"><button onClick="clearCookies()">CLEAR SCORE</button></div>
+<!--<button onClick="loadcookies()">LOAD COOKIES</button>
+<button onClick="clearcookies()">CLEAR COOKIES</button>-->
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="shopmenu"><!-- Marks this part of the website for the link to identify-->
+<div class="buttonmenu"><button><a href="#startpage">MENU</a></button> </div>
+<h1 id="shop">SKINS(IN Johncoin)</h1>
+<table id="skinshop" style="width:100%"><!--Sets up a template for each of the skins -->
+  <tr>
+ 
+    <td class = "default"><button onClick="document.getElementById('pagestyle').setAttribute('href', 'webapp.css')"><img src="images/jackcreep.jpg"/></button></td>
+    <td class = "easy"><button onClick="skinChange('jennaMarbles')"><img src="images/jennamarbles.png"/></button></td>
+    <td class = "easy"><button onClick="skinChange('flatJack')"><img src="images/flatjack.jpg"/></button></td>
+  </tr>
+  <tr class = "hard">
+    <td><button onClick="skinChange('forwJack')"><img src="images/forwjack.png"/></button></td>
+    <td><button onClick="skinChange('barfJack')"><img src="images/barfjack.png"/></button></td>
+    <td><button onClick="skinChange('emojiJack')"><img src="images/emojijack.png"/></button></td>
+  </tr>
+  <tr class = "ygs-worhty">
+    <td><button onClick="skinChange('lwiay')"><img src="images/lwiay.jpg"/></button></td>
+    <td><button onClick="skinChange('sfJack')"><img src="images/godjack.png"/></button></td>
+    <td><button onClick="skinChange('stacheJack')"><img src="images/stachejack.png"/></button></td>
+	  </tr>
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<p align="left"> <div class="buttonmenu2"> <button id="startbutton"><a href="#startpage">Menu</a></button> </div> </p><!-- This button links to the menu-->
+<!--This is the start of the wave mode for whac a jacc-->
+<div id="wsidebar" align="center"><!--DIsplays information to be seen while playing-->
+	<p align="center" > Wave</p> <div id="myProgress">
+  <div id="wmyBar" class="startpage">1</div>
+</div><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
+	<p align="center"> <button onClick="wavestart()" id="wstart"></button></p><!--This button starts the game-->
+	<p align="center"> Score = <span id="wscore"></span> Points</p>
+	<p align="center"> HighScore = <span id="whighScore"></span> Points</p>
+	<p align="center"> Total Points = <span id="wtotalScore"></span> Points</p>
+</div>
+<div id="waves" align="right"><!--Marks this for the link to identify -->
+	<table width="1000px" height="850px" border="1" align="center"><!--The table sets up the grid for each mole button -->
+		<tr>
+			<td>
+			 	<button id="wmole11"  class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
+			 	<button id="wmole12"  class="void"></button>
+			 	<button id="wmole13"  class="void"></button>
+			 	<button id="wmole14"  class="void"></button>
+			 	<button id="wmole15"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				 <button id="wmole21"  class="void"></button>
+				 <button id="wmole22"  class="void"></button> 
+			 	<button id="wmole23"  class="void"></button> 
+			 	<button id="wmole24"  class="void"></button> 
+			 	<button id="wmole25"  class="void"></button> 
+				 <br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			 	<button id="wmole31"  class="void"></button>
+			 	<button id="wmole32"  class="void"></button>
+			 	<button id="wmole33"  class="void"></button>  
+			 	<button id="wmole34"  class="void"></button> 
+			 	<button id="wmole35"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+	</table>
+</div><!--Breaks are to space each game instead of creating a new html file-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="buttonmenu3"><button><a href="#startpage">MENU</a></button></div><!--This is the start of the classic game-->
+<div id="sidebar" align="center"><!--DIsplays information to be seen while playing-->
+	<p align="center" > CLASSIC </p><div>
+  <div id="time">45</div>
+</div><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
+	<p align="center"> <button onClick="start()" id="start"></button></p><!--This button starts the game-->
+	<p align="center"> Score = <span id="score"></span> Points</p>
+	<p align="center"> HighScore = <span id="highScore"></span> Points</p>
+	<p align="center"> Total Points = <span id="totalScore"></span> Points</p>
+</div>
+<div id="game">
+<table width="1000px" height="850px" border="1" align="center"><!--The table sets up the grid for each mole button -->
+		<tr>
+			<td>
+			 	<button id="mole11"  class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
+			 	<button id="mole12"  class="void"></button>
+			 	<button id="mole13"  class="void"></button>
+			 	<button id="mole14"  class="void"></button>
+			 	<button id="mole15"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				 <button id="mole21"  class="void"></button>
+				 <button id="mole22"  class="void"></button> 
+			 	<button id="mole23"  class="void"></button> 
+			 	<button id="mole24"  class="void"></button> 
+			 	<button id="mole25"  class="void"></button> 
+				 <br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			 	<button id="mole31"  class="void"></button>
+			 	<button id="mole32"  class="void"></button>
+			 	<button id="mole33"  class="void"></button>  
+			 	<button id="mole34"  class="void"></button> 
+			 	<button id="mole35"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+	</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		 <h1 id="tutorial">TUTORIAL</h1>
+<h2>1. Press the Sundae dog start button</h2><br>
+<h2>2. Press the start button</h2><br>
+<h2>3. WHAC THOSE JACKS</h2><br>
+<h2>4. Jack = +1 Johncoin, DogJack = +5 Johncoin, Erin = Game Over, Clock = +2 Seconds, Pewdiepie = +10 Johncoin</h2><br>
+<h2>5. DON'T LET TIME RUN OUT BY CLICKING THE CLOCKS</h2><br>
+<h2>6. Use your Johncoin to buy new skins in the shop</h2><br>
+<h2>7. *You're</h2>
+<div class="buttonmenu3"><button><a href="#startpage">MENU</a></button></div>
+</body>
+</html>

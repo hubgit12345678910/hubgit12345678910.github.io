@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<body onLoad="prog()">
+<script type="text/javascript">
+var x = 1
+while (x > 0)
+	{
+		var temp = prompt("What is the temperature in F?")
+		var ctemp = (temp - 32)/1.8
+		document.write("The temp in C is ",ctemp,"")
+		if (temp == 'done'){
+			var x = -1
+		}
+	}
+
+
+
+</script>
+</body>
+</html>

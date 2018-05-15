@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+var score = 0;
+
+window.onload = function() {
+	document.getElementById("testBtn").addEventListener("click", addScore1);
+	
+	document.getElementById("testBtn").addEventListener("click", function() {
+		setTimeout( function() {
+			document.getElementById("testBtn").removeEventListener("click", addScore1);
+		}, 500);
+	}
+};
+
+function addScore1() {
+	score++;
+	alert(score);
+}
+
+</script>
+</head>
+
+<body>
+<button id="testBtn">Click</button>
+</body>
+</html>

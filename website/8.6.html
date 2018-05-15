@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function rpsGen(){
+var comp = Math.floor(Math.random()*3)+1;
+return comp;
+}
+var comp = rpsGen()
+document.write(comp)
+	var count = 0;
+	while (count != 1){
+	var input  = prompt("Enter either 'rock' 'paper' or 'scissors'");
+	if (input == "rock" || input == "paper" || input=="scissors"){
+		count =  1;
+	}
+	else{
+		document.write("Error9384984984294: Invalid Input");
+	}
+	}
+	var out = 2;
+while(out == true){
+	var wins = 0;
+	var ties = 0;
+	var lose = 0;
+	var out = true;
+	while (out = true){
+	if (input == "rock"){
+		input = 1;
+}
+if (input == "scissors"){
+		input = 2;
+	}
+if (input == "paper"){
+		input = 3;
+	}
+if (input == comp{
+	var out = confirm("You tied! Want to play again?");
+		ties++;
+	}
+	if (input == 1 && comp == 2 || input == 2 && comp==3 || input == 3 && comp == 1){
+		var out = confirm("You won! Want to play again");
+		wins++;
+	}
+	if (input == 2 && comp == 1 || input == 3 && comp == 2 || input == 1 && comp == 3){
+		var out = confirm("You lost! Bad luck? Want to play again?");
+	lose++;
+	}
+	
+	}
+
+
+
+</script> 
+
+</body>
+</html>

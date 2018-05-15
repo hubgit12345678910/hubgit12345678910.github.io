@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CookieClickerv0.1</title>
+<style>
+body {
+	text-align:center;
+}
+</style>
+
+<script type="text/javascript">
+var score = 0;
+function meme_clicker() {
+		score = score + 2;
+		document.getElementById("score").value = score;
+}
+</script>
+</head>
+
+<body>
+
+<h1> Meme Clicker </h1>
+<button onClick="meme_clicker();"><img src="images/meme.jpg" alt=""></button><br>
+<input id="score" type="text" value="0">
+</body>
+</html>

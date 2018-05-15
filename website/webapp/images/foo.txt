@@ -1,0 +1,1 @@
+Since Git won't allow you to have empty folders, this file is simply a placeholder for you to upload any pictures you want.
